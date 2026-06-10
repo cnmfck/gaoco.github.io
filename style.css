@@ -1,4 +1,4 @@
-/* style.css - 高擎三炬精密科技 品牌占位页面样式 */
+/* style.css - 高擎三炬精密科技 品牌页面样式 */
 * {
     margin: 0;
     padding: 0;
@@ -508,7 +508,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* 自定义按钮额外光效 */
 .btn-primary:active {
     transform: scale(0.97);
 }

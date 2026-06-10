@@ -7,7 +7,6 @@ const wordElement = document.getElementById("changingWord");
 
 function updateWord() {
     if (!wordElement) return;
-    // 淡出效果
     wordElement.style.opacity = "0";
     setTimeout(() => {
         index = (index + 1) % words.length;
@@ -15,23 +14,19 @@ function updateWord() {
         wordElement.style.opacity = "1";
     }, 300);
 }
-// 每2.8秒切换一次
 if (wordElement) {
     setInterval(updateWord, 2800);
 }
 
-// 2. 鼠标跟随光晕 (高级动效)
+// 2. 鼠标跟随光晕
 const glow = document.querySelector(".cursor-glow");
 if (glow) {
     document.addEventListener("mousemove", (e) => {
-        // 使用 requestAnimationFrame 保证平滑性能
         requestAnimationFrame(() => {
             glow.style.left = e.clientX + "px";
             glow.style.top = e.clientY + "px";
         });
     });
-    
-    // 鼠标移出窗口时稍微隐藏光晕避免突兀 (可选)
     document.addEventListener("mouseleave", () => {
         glow.style.opacity = "0";
     });
@@ -40,21 +35,16 @@ if (glow) {
     });
 }
 
-// 3. 按钮交互 + 平滑滚动提醒 + 控制台占位演示
+// 3. 按钮交互 + 平滑滚动
 const exploreBtn = document.getElementById("exploreBtn");
 const contactBtn = document.getElementById("contactBtn");
 
 if (exploreBtn) {
     exploreBtn.addEventListener("click", () => {
-        // 优雅提示 + 滚动到核心技术区域
         const techSection = document.getElementById("tech");
         if (techSection) {
             techSection.scrollIntoView({ behavior: "smooth", block: "start" });
-        } else {
-            // 如果不存在则后备
-            window.location.href = "#tech";
         }
-        // 简洁的控制台占位输出（体现占位符但又不影响用户）
         console.log("✨ GAOCO 探索前沿技术 | 高擎三炬 精密智造");
     });
 }
@@ -65,7 +55,6 @@ if (contactBtn) {
         if (contactSection) {
             contactSection.scrollIntoView({ behavior: "smooth", block: "center" });
         } else {
-            // 后备 fallback 联系区域也可在 footer 附近
             const footerContact = document.querySelector(".contact-card");
             if (footerContact) footerContact.scrollIntoView({ behavior: "smooth" });
         }
@@ -73,7 +62,7 @@ if (contactBtn) {
     });
 }
 
-// 4. 为卡片增加细腻的进入视口动效 (淡入+上浮，提升占位符精致度)
+// 4. 卡片进入视口动效 (淡入+上浮)
 const cards = document.querySelectorAll(".card");
 const observerOptions = {
     threshold: 0.2,
@@ -91,21 +80,19 @@ const cardObserver = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 cards.forEach(card => {
-    // 初始状态透明 + 微沉
     card.style.opacity = "0";
     card.style.transform = "translateY(20px)";
     card.style.transition = "opacity 0.6s cubic-bezier(0.2, 0.9, 0.4, 1.1), transform 0.5s ease";
     cardObserver.observe(card);
 });
 
-// 5. 导航高亮 + 平滑滚动增强 (优化用户体验)
+// 5. 导航高亮 + 平滑滚动增强
 const navLinks = document.querySelectorAll("nav a");
 const sections = ["home", "tech", "about", "contact"];
 
 function updateActiveNav() {
     let current = "";
-    const scrollPos = window.scrollY + 120; // 偏移量适应sticky header
-
+    const scrollPos = window.scrollY + 120;
     for (let sec of sections) {
         const element = document.getElementById(sec);
         if (element) {
@@ -117,7 +104,6 @@ function updateActiveNav() {
             }
         }
     }
-
     navLinks.forEach(link => {
         link.style.color = "";
         const href = link.getAttribute("href")?.substring(1);
@@ -135,11 +121,10 @@ window.addEventListener("scroll", () => {
 });
 window.addEventListener("load", updateActiveNav);
 
-// 6. 为联系卡片/按钮添加额外的小交互动画（点击波纹简单效果）
+// 6. 按钮点击微动效
 const allBtns = document.querySelectorAll(".btn, .card-btn, .about-more-btn");
 allBtns.forEach(btn => {
     btn.addEventListener("click", (e) => {
-        // 微妙的按压感 (不是必须，但增加占位符细节)
         btn.style.transform = "scale(0.97)";
         setTimeout(() => {
             btn.style.transform = "";
@@ -147,7 +132,7 @@ allBtns.forEach(btn => {
     });
 });
 
-// 7. 给所有带导航的链接增加平滑滚动拦截（防止默认跳转闪烁）
+// 7. 锚点平滑滚动拦截 (避免默认跳动)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function(e) {
         const targetId = this.getAttribute("href");
@@ -156,22 +141,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         if (targetElement) {
             e.preventDefault();
             targetElement.scrollIntoView({ behavior: "smooth" });
-            // 更新URL hash而不引起跳转（可选，不影响美观）
             history.pushState(null, null, targetId);
         }
     });
 });
 
-// 8. 额外占位提示：控制台输出企业域名，让开发者一目了然
+// 8. 控制台品牌输出
 console.log(
-    "%c高擎三炬精密科技 | GAOCO 占位页面已加载\n域名: gaoco.org\n精密智造，定义微米级未来",
+    "%c高擎三炬精密科技 | GAOCO 精准智造平台\n域名: gaoco.org | 纳米级测量 · 工业4.0解决方案 | 搜索引擎优化已集成结构化数据",
     "color: #42a5f5; font-size: 14px; font-weight: bold;"
 );
 
-// 9. 为数字统计增加简单的动态计数（装饰增强）
+// 9. 统计数字视觉高亮动效
 const statNumbers = document.querySelectorAll(".stats strong");
 if (statNumbers.length) {
-    // 只执行一次的小动效，不复杂，当数字进入可视区时略微高亮
     const statObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -186,18 +169,5 @@ if (statNumbers.length) {
     statNumbers.forEach(stat => statObserver.observe(stat));
 }
 
-// 10. 针对移动端菜单简单处理（尽管目前无折叠菜单但提供良好的基础结构，可扩展）
-const mobileBtn = document.getElementById("mobileMenuBtn");
-if (mobileBtn) {
-    const navMenu = document.querySelector("nav");
-    mobileBtn.addEventListener("click", () => {
-        if (navMenu) {
-            navMenu.classList.toggle("open");
-            const expanded = navMenu.classList.contains("open");
-            mobileBtn.setAttribute("aria-expanded", expanded);
-        }
-    });
-}
-
-// 说明：因为原html中并无mobileMenuBtn元素，为了避免错误，已有判断包裹；
-// 后续如需增加移动菜单按钮，样式即可无缝支持。
+// 10. 移动菜单预留扩展
+console.log("GAOCO 高擎三炬 | 精密驱动未来 · 已为搜索引擎优化meta+jsonLD");
