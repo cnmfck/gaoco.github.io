@@ -35,6 +35,9 @@ const translations = {
         techCard5Text: "面向高精密结构件提供工艺与检测协同方案。",
         techCard6Title: "工业4.0集成",
         techCard6Text: "连接设备、数据与管理系统，构建智能制造闭环。",
+        goProducts: "查看产品",
+        goAbout: "了解公司",
+        goContacts: "全部方式",
 
         aboutTag: "关于 GAOCO",
         aboutTitle: "以精密丈量世界 · 创新驱动未来",
@@ -101,6 +104,39 @@ const translations = {
         contactsCtaText: "告诉我们您的应用场景、精度要求与项目阶段，我们会尽快为您提供建议。",
         contactsCtaBtn: "发送邮件",
 
+        aboutPageBadge: "关于 GAOCO",
+        aboutPageTitle: "以精密技术沉淀长期价值",
+        aboutPageSubtitle: "这里将展示高擎三炬精密科技的发展历程、荣誉资质、技术积累与未来规划。当前内容为占位版本，后续可替换为真实资料。",
+        companyOverviewTag: "公司概况",
+        companyOverviewTitle: "专注精密制造场景的技术型企业",
+        companyOverviewText1: "高擎三炬精密科技有限公司位于苏州常熟，围绕精密测量、智能检测、自动化集成与数字化平台，为高端制造客户提供系统化解决方案。",
+        companyOverviewText2: "公司将持续投入研发能力、工艺能力与交付能力，面向半导体、医疗、航空航天与先进制造行业建立长期合作。",
+        honorTag: "荣誉与资质",
+        honor1Title: "荣誉资质占位",
+        honor1Text: "此处后续可填写高新技术企业、专利证书、行业奖项或认证信息。",
+        honor2Title: "体系认证占位",
+        honor2Text: "此处后续可填写 ISO、质量管理体系、行业准入资质等。",
+        honor3Title: "技术成果占位",
+        honor3Text: "此处后续可填写研发成果、软件著作权、专利或重点项目。",
+        timelineLabel: "发展时间轴",
+        timelineTitle: "从技术积累到产业落地",
+        timelineYear1: "阶段一",
+        timeline1Title: "公司筹备与技术方向确立",
+        timeline1Text: "占位内容：确立精密测量、智能检测与工业自动化方向，建立核心团队与研发基础。",
+        timelineYear2: "阶段二",
+        timeline2Title: "产品原型与项目验证",
+        timeline2Text: "占位内容：完成关键模块验证，形成面向实际制造场景的产品原型与解决方案。",
+        timelineYear3: "阶段三",
+        timeline3Title: "客户交付与系统集成",
+        timeline3Text: "占位内容：推进项目交付，积累半导体、医疗、航空航天或先进制造行业案例。",
+        timelineYear4: "未来规划",
+        timeline4Title: "平台化与全球服务",
+        timeline4Text: "占位内容：完善产品矩阵、强化数据平台能力，逐步拓展全球技术服务网络。",
+        aboutCtaTitle: "想了解我们的产品与合作方式？",
+        aboutCtaText: "您可以查看产品中心，或直接联系我们沟通具体需求。",
+        aboutCtaProducts: "查看产品",
+        aboutCtaContacts: "联系我们",
+
         footerCopyright: "© 2025 高擎三炬精密科技有限公司 GAOCO Precision. 保留一切权利。"
     },
 
@@ -138,6 +174,9 @@ const translations = {
         techCard5Text: "Process-and-inspection solutions for high-precision structural components.",
         techCard6Title: "Industry 4.0 Integration",
         techCard6Text: "Connect equipment, data, and management systems into a smart manufacturing loop.",
+        goProducts: "View Products",
+        goAbout: "About Company",
+        goContacts: "All Contacts",
 
         aboutTag: "About GAOCO",
         aboutTitle: "Measuring the World with Precision · Innovating for the Future",
@@ -203,6 +242,39 @@ const translations = {
         contactsCtaTitle: "Ready to cooperate?",
         contactsCtaText: "Tell us your application scenario, precision requirements, and project stage. We will respond with recommendations.",
         contactsCtaBtn: "Send Email",
+
+        aboutPageBadge: "About GAOCO",
+        aboutPageTitle: "Building Long-term Value Through Precision Technology",
+        aboutPageSubtitle: "This page will present GAOCO’s development history, honors, technical capabilities, and future roadmap. Current content is placeholder text and can be replaced with official materials later.",
+        companyOverviewTag: "Company Overview",
+        companyOverviewTitle: "A technology-driven company focused on precision manufacturing",
+        companyOverviewText1: "Located in Changshu, Suzhou, GAOCO provides systematic solutions for advanced manufacturing through precision measurement, intelligent inspection, automation integration, and digital platforms.",
+        companyOverviewText2: "GAOCO will continue investing in R&D, process capability, and delivery capacity to build long-term partnerships across semiconductor, medical, aerospace, and advanced manufacturing industries.",
+        honorTag: "Honors & Qualifications",
+        honor1Title: "Honor Placeholder",
+        honor1Text: "This area can later include high-tech enterprise recognition, patent certificates, industry awards, or certification records.",
+        honor2Title: "Certification Placeholder",
+        honor2Text: "This area can later include ISO, quality management system, or industry qualification information.",
+        honor3Title: "Technical Achievement Placeholder",
+        honor3Text: "This area can later include R&D achievements, software copyrights, patents, or major projects.",
+        timelineLabel: "Development Timeline",
+        timelineTitle: "From technical accumulation to industrial application",
+        timelineYear1: "Stage 1",
+        timeline1Title: "Preparation and technical direction",
+        timeline1Text: "Placeholder: define directions in precision measurement, intelligent inspection, and industrial automation while building the core team and R&D foundation.",
+        timelineYear2: "Stage 2",
+        timeline2Title: "Product prototype and project validation",
+        timeline2Text: "Placeholder: complete key module validation and form product prototypes and solutions for real manufacturing scenarios.",
+        timelineYear3: "Stage 3",
+        timeline3Title: "Customer delivery and system integration",
+        timeline3Text: "Placeholder: advance project delivery and accumulate cases in semiconductor, medical, aerospace, or advanced manufacturing fields.",
+        timelineYear4: "Roadmap",
+        timeline4Title: "Platformization and global service",
+        timeline4Text: "Placeholder: improve the product matrix, strengthen data platform capabilities, and gradually expand the global service network.",
+        aboutCtaTitle: "Want to learn about our products and cooperation model?",
+        aboutCtaText: "You can visit the product center or contact us directly to discuss specific requirements.",
+        aboutCtaProducts: "View Products",
+        aboutCtaContacts: "Contact Us",
 
         footerCopyright: "© 2025 GAOCO Precision Technology Co., Ltd. All rights reserved."
     }
@@ -274,12 +346,16 @@ function updateDocumentMeta(lang) {
             contacts: {
                 title: "联系 GAOCO | 高擎三炬精密科技",
                 description: "联系高擎三炬精密科技 GAOCO。电话：+86 134-5161-9866，微信：Gaoliang_Edwin，邮箱：gaoco@126.com。"
+            },
+            about: {
+                title: "关于 GAOCO | 高擎三炬精密科技",
+                description: "了解高擎三炬精密科技 GAOCO 的公司发展、荣誉资质、技术积累与未来规划。"
             }
         },
         en: {
             home: {
                 title: "GAOCO Precision Technology | Precision Measurement · Intelligent Inspection · Industry 4.0",
-                description: "GAOCO focuses on ultra-precision measurement, intelligent automation lines, digital twin platforms, and Industry 4.0 solutions for semiconductor, medical, and aerospace applications."
+                description: "GAOCO focuses on ultra-precision measurement, intelligent automation lines, digital twin platforms, and Industry 4.0 solutions."
             },
             products: {
                 title: "Products | GAOCO Precision Technology",
@@ -288,6 +364,10 @@ function updateDocumentMeta(lang) {
             contacts: {
                 title: "Contact GAOCO | GAOCO Precision Technology",
                 description: "Contact GAOCO by phone, WeChat, email, or address for precision measurement, intelligent inspection, and Industry 4.0 cooperation."
+            },
+            about: {
+                title: "About GAOCO | GAOCO Precision Technology",
+                description: "Learn about GAOCO’s development, honors, technical capabilities, and future roadmap."
             }
         }
     };
@@ -319,7 +399,6 @@ if (wordElement) {
     setInterval(updateWord, 2800);
 }
 
-// 鼠标跟随光晕
 const glow = document.querySelector(".cursor-glow");
 if (glow) {
     document.addEventListener("mousemove", (e) => {
@@ -338,7 +417,6 @@ if (glow) {
     });
 }
 
-// 语言切换按钮
 const languageToggle = document.getElementById("languageToggle");
 if (languageToggle) {
     languageToggle.addEventListener("click", () => {
@@ -347,8 +425,7 @@ if (languageToggle) {
     });
 }
 
-// 卡片进入视口动效
-const animatedCards = document.querySelectorAll(".card, .product-card, .contact-detail-card");
+const animatedCards = document.querySelectorAll(".card, .product-card, .contact-detail-card, .about-company-card, .honor-card, .timeline-item");
 const observerOptions = {
     threshold: 0.16,
     rootMargin: "0px 0px -20px 0px"
@@ -373,9 +450,8 @@ if ("IntersectionObserver" in window) {
     });
 }
 
-// 导航高亮
 const navLinks = document.querySelectorAll("nav a");
-const sections = ["home", "tech", "about", "contact"];
+const sections = ["home", "tech", "about-preview", "contact"];
 
 function updateActiveNav() {
     const currentPath = window.location.pathname.split("/").pop() || "index.html";
@@ -388,8 +464,10 @@ function updateActiveNav() {
 
         if (
             (currentPath === "index.html" && href === "index.html") ||
+            (currentPath === "" && href === "index.html") ||
             (currentPath === "products.html" && href === "products.html") ||
-            (currentPath === "contacts.html" && href === "contacts.html")
+            (currentPath === "contacts.html" && href === "contacts.html") ||
+            (currentPath === "about.html" && href === "about.html")
         ) {
             link.style.color = "#42a5f5";
             link.style.fontWeight = "600";
@@ -430,8 +508,7 @@ window.addEventListener("scroll", () => {
 
 window.addEventListener("load", updateActiveNav);
 
-// 按钮点击微动效
-const allClickableBtns = document.querySelectorAll(".btn, .float-btn");
+const allClickableBtns = document.querySelectorAll(".btn, .float-btn, .section-link");
 allClickableBtns.forEach(btn => {
     btn.addEventListener("click", () => {
         btn.style.transform = "scale(0.97)";
@@ -441,7 +518,6 @@ allClickableBtns.forEach(btn => {
     });
 });
 
-// 锚点平滑滚动
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function(e) {
         const targetId = this.getAttribute("href");
@@ -456,7 +532,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// 统计数字视觉高亮动效
 const statNumbers = document.querySelectorAll(".stats strong");
 if (statNumbers.length && "IntersectionObserver" in window) {
     const statObserver = new IntersectionObserver((entries) => {
@@ -474,10 +549,9 @@ if (statNumbers.length && "IntersectionObserver" in window) {
     statNumbers.forEach(stat => statObserver.observe(stat));
 }
 
-// 初始化语言
 applyLanguage(currentLang);
 
 console.log(
-    "%cGAOCO 高擎三炬 | Precision Manufacturing Website\nLanguage switch, products page, contacts page, and floating contact sidebar enabled.",
+    "%cGAOCO 高擎三炬 | Precision Manufacturing Website\nVersion: 20260610-2 | About page, mobile layout, sitemap-ready structure enabled.",
     "color: #42a5f5; font-size: 14px; font-weight: bold;"
 );
