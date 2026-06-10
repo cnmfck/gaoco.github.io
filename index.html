@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>高擎三炬精密科技 | GAOCO - 纳米级精密测量·智能检测·工业4.0解决方案</title>
     
-    <!-- ========== SEO 关键元数据（让搜索引擎一搜相关字符就展示本网站） ========== -->
-    <meta name="description" content="高擎三炬精密科技(GAOCO)专注超高精度测量、智能自动化产线、数字孪生平台，为半导体/医疗/航空航天提供工业4.0全栈方案。重复精度±10nm，ISO13485认证，全球服务。">
+    <meta name="description" content="高擎三炬精密科技(GAOCO)专注超高精度测量、智能自动化产线、数字孪生平台，为半导体/医疗/航空航天提供工业4.0全栈方案。重复精度±0.001mm，ISO13485认证，全球服务。">
     <meta name="keywords" content="高擎三炬, GAOCO, 精密科技, 精密测量, 智能检测, 数字孪生, 工业4.0, 纳米级制造, 超高精度, 自动化产线, AI视觉检测, 苏州精密仪器, 半导体检测, 航空航天精密">
     <meta name="author" content="高擎三炬精密科技有限公司">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://gaoco.org/">
     
-    <!-- Open Graph / 社交分享 -->
     <meta property="og:title" content="高擎三炬精密科技 | GAOCO - 精密智造定义微米级未来">
     <meta property="og:description" content="纳米级测量·智能检测·工业4.0全栈解决方案，服务半导体/医疗/航空航天。">
     <meta property="og:type" content="website">
@@ -20,12 +18,10 @@
     <meta property="og:site_name" content="高擎三炬精密科技">
     <meta property="og:locale" content="zh_CN">
     
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="高擎三炬精密科技 | GAOCO">
     <meta name="twitter:description" content="超高精度驱动未来 · 智能检测系统与数字孪生平台，赋能工业4.0。">
     
-    <!-- 结构化数据 JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -59,20 +55,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="home">
     <div class="cursor-glow"></div>
+
+    <aside class="floating-sidebar" aria-label="Quick actions">
+        <button class="float-btn language-toggle" id="languageToggle" type="button" aria-label="Switch language">
+            <i class="fas fa-language"></i>
+            <span id="languageToggleText">EN</span>
+        </button>
+        <a class="float-btn" href="contacts.html" aria-label="Contact GAOCO">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </aside>
 
     <header>
         <div class="container header-flex">
-            <div class="logo">
+            <a class="logo" href="index.html" aria-label="GAOCO Home">
                 <i class="fas fa-microchip"></i>
                 <span>GAOCO<span class="logo-light">·高擎三炬</span></span>
-            </div>
+            </a>
             <nav>
-                <a href="#home">首页</a>
-                <a href="#tech">技术</a>
-                <a href="#about">关于</a>
-                <a href="#contact">联系</a>
+                <a href="index.html" data-i18n="navHome">首页</a>
+                <a href="products.html" data-i18n="navProducts">产品</a>
+                <a href="#tech" data-i18n="navTech">技术</a>
+                <a href="#about" data-i18n="navAbout">关于</a>
+                <a href="contacts.html" data-i18n="navContact">联系</a>
             </nav>
         </div>
     </header>
@@ -80,20 +87,32 @@
     <main>
         <section class="hero" id="home">
             <div class="container hero-inner">
-                <div class="badge">精密驱动未来 · 智造无限可能</div>
-                <h1>高擎三炬<br><span class="highlight">精密科技</span> · 卓越之选</h1>
+                <div class="badge" data-i18n="homeBadge">精密驱动未来 · 智造无限可能</div>
+                <h1>
+                    <span data-i18n="homeTitleLine1">高擎三炬</span><br>
+                    <span class="highlight" data-i18n="homeTitleHighlight">精密科技</span>
+                    <span data-i18n="homeTitleLine2"> · 卓越之选</span>
+                </h1>
                 <div class="dynamic-wrap">
-                    专注 <span id="changingWord">精密测量</span> 技术生态
+                    <span data-i18n="homeFocusPrefix">专注</span>
+                    <span id="changingWord">精密测量</span>
+                    <span data-i18n="homeFocusSuffix">技术生态</span>
                 </div>
-                <p>纳米级制造 · 智能检测 · 工业4.0全栈方案</p>
+                <p data-i18n="homeSubtitle">纳米级制造 · 智能检测 · 工业4.0全栈方案</p>
                 <div class="btn-group">
-                    <button class="btn btn-primary" id="exploreBtn">探索前沿 <i class="fas fa-arrow-right"></i></button>
-                    <button class="btn btn-outline" id="contactBtn">联系专家 <i class="fas fa-comment-dots"></i></button>
+                    <a class="btn btn-primary" href="products.html">
+                        <span data-i18n="homeProductBtn">产品</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a class="btn btn-outline" href="contacts.html">
+                        <span data-i18n="homeContactBtn">联系专家</span>
+                        <i class="fas fa-comment-dots"></i>
+                    </a>
                 </div>
                 <div class="stats">
-                    <div><strong>±0.001mm</strong><span>重复精度</span></div>
-                    <div><strong>ISO 13485</strong><span>国际认证</span></div>
-                    <div><strong>24/7</strong><span>技术支持</span></div>
+                    <div><strong>±0.001mm</strong><span data-i18n="statPrecision">重复精度</span></div>
+                    <div><strong>ISO 13485</strong><span data-i18n="statCertification">国际认证</span></div>
+                    <div><strong>24/7</strong><span data-i18n="statSupport">技术支持</span></div>
                 </div>
             </div>
             <div class="hero-bg-shape"></div>
@@ -102,24 +121,39 @@
         <section class="tech" id="tech">
             <div class="container">
                 <div class="section-title">
-                    <span>核心技术</span>
-                    <h2>高精尖 · 智造中枢</h2>
+                    <span data-i18n="techLabel">核心技术</span>
+                    <h2 data-i18n="techTitle">高精尖 · 智造中枢</h2>
                 </div>
-                <div class="cards">
+                <div class="cards compact-cards">
                     <div class="card">
                         <i class="fas fa-ruler-combined"></i>
-                        <h3>超高精度测量</h3>
-                        <p>纳米级检测，良率提升30%+</p>
+                        <h3 data-i18n="techCard1Title">超高精度测量</h3>
+                        <p data-i18n="techCard1Text">纳米级检测，提升关键零部件质量稳定性。</p>
                     </div>
                     <div class="card">
                         <i class="fas fa-robot"></i>
-                        <h3>智能自动化产线</h3>
-                        <p>自研机械臂，多品种高精密生产</p>
+                        <h3 data-i18n="techCard2Title">智能自动化产线</h3>
+                        <p data-i18n="techCard2Text">柔性工站与自动化流程，适配多品种生产。</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-eye"></i>
+                        <h3 data-i18n="techCard3Title">AI视觉检测</h3>
+                        <p data-i18n="techCard3Text">机器视觉识别缺陷，辅助品质追踪与判断。</p>
                     </div>
                     <div class="card">
                         <i class="fas fa-chart-line"></i>
-                        <h3>数据孪生平台</h3>
-                        <p>数字孪生实时映射，预测性维护，效能最大化</p>
+                        <h3 data-i18n="techCard4Title">数字孪生平台</h3>
+                        <p data-i18n="techCard4Text">实时映射设备与产线状态，支持预测性维护。</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-microscope"></i>
+                        <h3 data-i18n="techCard5Title">微纳加工支持</h3>
+                        <p data-i18n="techCard5Text">面向高精密结构件提供工艺与检测协同方案。</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-industry"></i>
+                        <h3 data-i18n="techCard6Title">工业4.0集成</h3>
+                        <p data-i18n="techCard6Text">连接设备、数据与管理系统，构建智能制造闭环。</p>
                     </div>
                 </div>
             </div>
@@ -128,21 +162,25 @@
         <section class="about" id="about">
             <div class="container about-grid">
                 <div class="about-text">
-                    <div class="tag">关于 GAOCO</div>
-                    <h2>以精密丈量世界 · 创新驱动未来</h2>
-                    <p>高擎三炬精密科技有限公司总部位于苏州，专注于高端精密仪器、超精密加工及智能检测系统，为半导体、医疗、航空航天提供一站式解决方案。</p>
+                    <div class="tag" data-i18n="aboutTag">关于 GAOCO</div>
+                    <h2 data-i18n="aboutTitle">以精密丈量世界 · 创新驱动未来</h2>
+                    <p data-i18n="aboutText">高擎三炬精密科技有限公司总部位于苏州，专注于高端精密仪器、超精密加工及智能检测系统，为半导体、医疗、航空航天提供一站式解决方案。</p>
                     <div class="mini-features">
-                        <span><i class="fas fa-flask"></i> 研发占比>20%</span>
-                        <span><i class="fas fa-trophy"></i> 国家高新企业</span>
-                        <span><i class="fas fa-globe"></i> 全球服务网络</span>
+                        <span><i class="fas fa-flask"></i> <span data-i18n="feature1">研发占比&gt;20%</span></span>
+                        <span><i class="fas fa-trophy"></i> <span data-i18n="feature2">国家高新企业</span></span>
+                        <span><i class="fas fa-globe"></i> <span data-i18n="feature3">全球服务网络</span></span>
                     </div>
                 </div>
                 <div class="contact-card" id="contact">
-                    <h3><i class="fas fa-paper-plane"></i> 联系合作</h3>
+                    <h3><i class="fas fa-paper-plane"></i> <span data-i18n="contactCardTitle">联系合作</span></h3>
                     <p><i class="fas fa-envelope"></i> gaoco@126.com</p>
-                    <p><i class="fab fa-weixin"></i> 微信号：Gaoliang_Edwin</p>
+                    <p><i class="fab fa-weixin"></i> <span data-i18n="wechatLabel">微信号：</span>Gaoliang_Edwin</p>
                     <p><i class="fas fa-phone-alt"></i> +86 134-5161-9866</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 苏州·常熟市沙家浜镇久隆路7号13幢</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="addressText">苏州·常熟市沙家浜镇久隆路7号13幢</span></p>
+                    <a class="btn btn-primary contact-card-btn" href="contacts.html">
+                        <span data-i18n="viewAllContacts">查看全部联系方式</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </section>
@@ -150,7 +188,7 @@
 
     <footer>
         <div class="container footer-inner">
-            <p>&copy; 2025 高擎三炬精密科技有限公司 GAOCO Precision. 保留一切权利。</p>
+            <p data-i18n="footerCopyright">&copy; 2025 高擎三炬精密科技有限公司 GAOCO Precision. 保留一切权利。</p>
             <p class="domain">gaoco.org</p>
         </div>
     </footer>
