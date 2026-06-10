@@ -69,7 +69,7 @@ if (contactBtn) {
             const footerContact = document.querySelector(".contact-card");
             if (footerContact) footerContact.scrollIntoView({ behavior: "smooth" });
         }
-        console.log("📧 联系 GAOCO: contact@gaoco.org | 期待与您合作");
+        console.log("📧 联系 GAOCO: gaoco@126.com | 期待与您合作");
     });
 }
 
