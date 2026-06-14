@@ -75,3 +75,79 @@
 @media (max-width:1100px){.honor-orbit-card.pos-left2,.honor-orbit-card.pos-right2{opacity:.16}.honor-orbit-card.pos-left1{transform:translate(-50%,-50%) translateX(-280px) translateY(22px) rotateY(18deg) scale(.78)}.honor-orbit-card.pos-right1{transform:translate(-50%,-50%) translateX(280px) translateY(22px) rotateY(-18deg) scale(.78)}}
 @media (max-width:820px){.honor-heading-row{align-items:flex-start;flex-direction:column;text-align:left}.honor-heading-row .section-title{text-align:left;margin:0}.honor-heading-row .section-link{position:relative;right:auto;top:auto;transform:none}.honor-orbit{height:410px}.honor-orbit-card{width:246px;height:326px}.honor-orbit-card img{height:228px}.plain-contact-hero{padding:76px 0 56px}.contact-wall-section::before{opacity:.36}.footer-ownership{text-align:center}.footer-contact-stack div{grid-template-columns:26px 72px 1fr}}
 @media (max-width:480px){.honor-orbit{height:360px}.honor-orbit-card{width:220px;height:296px}.honor-orbit-card img{height:204px}}
+
+
+/* v20260614-11 refinements: sticky selectors and product readability */
+.product-selector-wrap {
+    position: sticky;
+    top: 86px;
+    z-index: 660;
+    padding: 10px 0 12px;
+    margin-bottom: 28px;
+    background: linear-gradient(180deg, rgba(7,10,18,.96), rgba(7,10,18,.78));
+    backdrop-filter: blur(16px);
+}
+.product-selector {
+    position: relative;
+    top: auto;
+    z-index: auto;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.credential-tabs {
+    position: sticky;
+    top: 86px;
+    z-index: 660;
+    padding: 12px 0;
+    background: linear-gradient(180deg, rgba(7,10,18,.96), rgba(7,10,18,.78));
+    backdrop-filter: blur(16px);
+}
+.product-side-tools,
+.credential-side-tools {
+    display: none !important;
+}
+.product-panel[data-product-panel="advanced-ceramics"] .detailed-grid,
+.product-panel[data-product-panel="optical-communication"] .detailed-grid {
+    grid-template-columns: 1fr;
+}
+.product-panel[data-product-panel="advanced-ceramics"] .product-detail-card,
+.product-panel[data-product-panel="optical-communication"] .product-detail-card {
+    display: grid;
+    grid-template-columns: minmax(260px, 38%) 1fr;
+    gap: 26px;
+    align-items: center;
+    padding: 24px;
+}
+.product-panel[data-product-panel="advanced-ceramics"] .detail-image,
+.product-panel[data-product-panel="optical-communication"] .detail-image {
+    margin-bottom: 0;
+    min-height: 240px;
+}
+.product-panel[data-product-panel="advanced-ceramics"] .product-detail-card h3,
+.product-panel[data-product-panel="optical-communication"] .product-detail-card h3 {
+    font-size: 1.45rem;
+    margin-bottom: 10px;
+}
+.product-panel[data-product-panel="advanced-ceramics"] .product-detail-card p,
+.product-panel[data-product-panel="optical-communication"] .product-detail-card p {
+    font-size: 1rem;
+    line-height: 1.75;
+}
+@media (max-width: 760px) {
+    .product-selector-wrap,
+    .credential-tabs {
+        top: 74px;
+    }
+    .product-selector {
+        grid-template-columns: 1fr;
+    }
+    .product-panel[data-product-panel="advanced-ceramics"] .product-detail-card,
+    .product-panel[data-product-panel="optical-communication"] .product-detail-card {
+        grid-template-columns: 1fr;
+    }
+    .product-panel[data-product-panel="advanced-ceramics"] .detail-image,
+    .product-panel[data-product-panel="optical-communication"] .detail-image {
+        min-height: 190px;
+        margin-bottom: 4px;
+    }
+}
